@@ -15,3 +15,22 @@ thistuple = ("apple", "banana", "cherry")
 print(thistuple)
 thistuple =("aavi", "banana","cherry")
 print(thistuple)
+
+'''The tuple() Constructor
+It is also possible to use the tuple() constructor to make a tuple.
+
+Example
+Using the tuple() method to make a tuple:'''
+
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+
+
+'''Python Collections (Arrays)
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+'''
