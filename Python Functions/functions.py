@@ -97,3 +97,58 @@ def my_function(**kid):
 
 my_function(fname = "Tobias", lname = "Refsnes")
 
+
+#Default Parameter Value
+'''The following example shows how to use a default parameter value.
+If we call the function without argument, it uses the default value:'''
+
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+
+#Passing a List as an Argument
+'''You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+E.g. if you send a List as an argument, it will still be a List when it reaches the function:
+Example'''
+def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+
+
+#Return Values
+'''To let a function return a value, use the return statement:
+
+Example'''
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+#The pass Statement
+'''Function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
+
+Example'''
+def myfunction():
+  pass
+
+
+#Positional-Only Arguments
+'''You can specify that a function can have ONLY positional arguments, or ONLY keyword arguments.
+To specify that a function can have only positional arguments, add , / after the arguments:
+Example'''
+
+def my_function(x, /):
+  print(x)
+
+my_function(3)
