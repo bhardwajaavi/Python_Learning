@@ -57,4 +57,47 @@ def myfunction(nam):
 print(myfunction("Aavi"))
 
 
+#*args and **kwargs
+'''Sometimes the decorator function has no control over the arguments passed from decorated function, to solve this problem, add (*args, **kwargs) to the wrapper function, this way the wrapper function can accept any number, and any type of arguments, and pass them to the decorated function.
+
+Example
+Secure the function with *args and **kwargs arguments:'''
+
+def changecase(func):
+  def myinner(*args, **kwargs):
+    return func(*args, **kwargs).upper()
+  return myinner
+
+@changecase
+def myfunction(nam):
+  return "Hello " + nam
+
+print(myfunction("Aavi"))
+
+
+
+#Decorator With Arguments
+'''Decorators can accept their own arguments by adding another wrapper level.
+
+Example
+A decorator factory that takes an argument and transforms the casing based on the argument value.'''
+
+def changecase(n):
+  def changecase(func):
+    def myinner():
+      if n == 1:
+        a = func().lower()
+      else:
+        a = func().upper()
+      return a
+    return myinner
+  return changecase
+
+@changecase(1)
+def myfunction():
+  return "Hello Aavi Bhardwaj"
+
+print(myfunction())
+
+
 
