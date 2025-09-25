@@ -21,3 +21,15 @@ car3 = "BMW"
 However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
 The solution is an array!
 An array can hold many values under a single name, and you can access the values by referring to an index number.'''
+
+
+
+
+
+
+
+#Python Arrays
+'''Note: Python does not have built-in support for Arrays, but Python Lists can be used instead.'''
+
+'''Note: This page shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the NumPy library.
+Arrays are used to store multiple values in one single variable:'''
