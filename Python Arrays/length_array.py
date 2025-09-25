@@ -7,3 +7,8 @@ Return the number of elements in the cars array:'''
 cars = ["Ford", "Volvo", "BMW"]
 x=len(cars)
 print(x)
+
+
+family =["aavi","aneesh","satish", "anita"]
+x=len(family)
+print(x)
