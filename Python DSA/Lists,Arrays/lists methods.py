@@ -5,5 +5,5 @@ x.append(5)
 print(x)
 
 
-x.sort()
+x.sort()    #sort in ascending order
 print(x)

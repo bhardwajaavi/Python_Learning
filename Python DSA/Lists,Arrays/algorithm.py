@@ -14,3 +14,12 @@ for i in x:
     if i < min_value:
         min_value=i
 print("lowest Value is:",min_value)
+
+
+"""The algorithm above is very simple, and fast enough for small data sets, but if the data is big enough, any algorithm will take time to run.
+
+This is where optimization comes in.
+
+Optimization is an important part of algorithm development, and of course, an important part of DSA programming.
+
+"""
