@@ -1,3 +1,17 @@
+'''A tree is a hierarchical data structure consisting of nodes connected by edges.
+
+Each node contains a value and references to its child nodes.
+
+Binary Trees
+A Binary Tree is a type of tree data structure where each node can have a maximum of two child nodes, a left child node and a right child node.
+
+This restriction, that a node can have a maximum of two child nodes, gives us many benefits:
+
+Algorithms like traversing, searching, insertion and deletion become easier to understand, to implement, and run faster.
+Keeping data sorted in a Binary Search Tree (BST) makes searching very efficient.
+Balancing trees is easier to do with a limited number of child nodes, using an AVL Binary Tree for example.
+Binary Trees can be represented as arrays, making the tree more memory efficient.'''
+
 class TreeNode:
   def __init__(self, data):
     self.data = data
