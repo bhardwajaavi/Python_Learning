@@ -39,3 +39,6 @@ nodeE.left=nodeF
 
 #traverse
 inordertraversal(root)
+
+'''the is extra line made by aavi bhardwaj only
+'''
