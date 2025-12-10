@@ -17,3 +17,7 @@ class Family:
 
 print(Family)
 
+'''
+class family:
+  x=7
+print(family)'''
